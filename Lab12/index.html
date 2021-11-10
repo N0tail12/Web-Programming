@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    body {
+      background-color: antiquewhite;
+    }
+    form {
+      background-color: white;
+      width: 400px;
+      height: auto;
+    }
+    .container {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .form-content {
+      padding: 30px 20px;
+    }
+    input {
+      width: 100%;
+    }
+    #alert-email, #alert-url{
+      color: red;
+      display: none;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <form action="">
+        <div class="form-content">
+          <label for="email">Email:</label><br />
+          <input type="email" name="email" id="email" />
+          <div id="alert-email">Incorrect type of email!</div>
+          <label for="phone">Phone:</label><br />
+          <input type="number" name="phone" id="" />
+          <label for="url">URL:</label><br />
+          <input type="text" name="number" id="url" />
+          <div id="alert-url">Incorrect type url!</div>
+        </div>
+      </form>
+    </div>
+  </body>
+  <script src="./script.js"></script>
+</html>
